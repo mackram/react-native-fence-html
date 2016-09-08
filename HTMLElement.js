@@ -62,19 +62,8 @@ class HTMLElement extends React.Component {
   * @return the class for this node
   */
   elementClass () {
-    if (HTMLStyles.blockElements.has(this.props.tagName)) {
-      if (this.props.parentIsText) {
-        console.warn([
-          'You are trying to nest a non-text HTML element inside a text element.',
-          'The following nodes can only be rendered within themselves and not within text nodes:'
-        ].concat(Array.from(HTMLStyles.blockElements)).join('\n'))
-        return Text
-      } else {
-        return View
-      }
-    } else {
+      //all elements are treates as text to allow for smooth tracking
       return Text
-    }
   }
 
   render () {

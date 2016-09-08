@@ -50,8 +50,10 @@ class HTMLTextNode extends React.Component {
       if (!TEXT_TAG_NAMES.has(parentTagName) && htmlStr.trim().length === 0) {
         return ''
       } else {
-        if (nodeIndex === 0) {
-          return htmlStr.replace(RE.PREFIX_WHITESPACE, '')
+          if (nodeIndex === 0) {
+	      //we are adding the prefix whitespace for cases such as the element being a new one
+	      //in a set of nodes
+          return htmlStr.replace(RE.PREFIX_WHITESPACE, ' ')
         } else {
           return htmlStr
         }

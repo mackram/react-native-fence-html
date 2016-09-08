@@ -17,7 +17,7 @@ module.exports = {
         passProps.htmlStyles ? passProps.htmlStyles.a : undefined,
         htmlAttribs.style ? HTMLStyles.cssStringToRNStyle(htmlAttribs.style, HTMLStyles.STYLESETS.TEXT) : undefined
       ).filter((s) => s !== undefined)
-    if (passProps.parentIsText) {
+      //we are always returning the a link as if it is simply another link
       return (
         <Text
           {...passProps}
@@ -26,15 +26,6 @@ module.exports = {
           {children}
         </Text>
       )
-    } else {
-      return (
-        <TouchableOpacity onPress={(evt) => { passProps.onLinkPress ? passProps.onLinkPress(evt, htmlAttribs.href) : undefined }}>
-          <Text {...passProps} style={style}>
-            {children}
-          </Text>
-        </TouchableOpacity>
-      )
-    }
   },
   /**
   * Renders an image tag

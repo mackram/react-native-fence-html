@@ -1,9 +1,6 @@
 # react-native-fence-html
 
-[![Travis Build Status](https://img.shields.io/travis/Thomas101/react-native-fence-html.svg)](http://travis-ci.org/Thomas101/react-native-fence-html)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm](https://img.shields.io/npm/v/react-native-fence-html.svg?maxAge=2592000)](https://www.npmjs.com/package/react-native-fence-html)
-[![npm](https://img.shields.io/npm/l/react-native-fence-html.svg?maxAge=2592000)](https://github.com/Thomas101/react-native-fence-html/blob/master/LICENSE)
+This fork from the work by [Thomas101](https://github.com/Thomas101/react-native-fence-html-demo) only allows for text nodes to be created in react-native and by that allows flowing text irrespective of how it is done in the editor.
 
 A react native component that renders HTML as native views. This library is useful for rendering html snippets such as those that you get from wysiwyg text editors.
 
@@ -11,7 +8,7 @@ A react native component that renders HTML as native views. This library is usef
 
 ## Add it to your project
 ```
-npm install react-native-fence-html --save
+npm install https://github.com/mackram/react-native-fence-html --save
 ```
 
 ## Usage

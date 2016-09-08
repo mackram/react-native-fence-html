@@ -1,9 +1,9 @@
 {
   "name": "react-native-fence-html",
-  "author": "Thomas Beverley",
+  "author": "Mackram Raydan forked from Thomas Beverley",
   "license": "BSD-2-Clause",
-  "repository": "https://github.com/Thomas101/react-native-fence-html",
-  "description": "React Native component that renders HTML as native views",
+  "repository": "https://github.com/mackram/react-native-fence-html",
+  "description": "React Native component that renders HTML as native text nodes",
   "keywords": [
     "react-native",
     "react-component",
